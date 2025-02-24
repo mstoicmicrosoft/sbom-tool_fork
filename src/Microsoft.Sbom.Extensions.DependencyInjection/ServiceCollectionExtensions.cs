@@ -149,7 +149,8 @@ public static class ServiceCollectionExtensions
                     typeof(ISourcesProvider),
                     typeof(IManifestGenerator),
                     typeof(IMetadataProvider),
-                    typeof(IManifestInterface)))
+                    typeof(IManifestInterface),
+                    typeof(IDigitalSignatureCreator)))
                 .AsImplementedInterfaces())
             .AddScoped<ISBOMGenerator, SbomGenerator>()
             .AddScoped<ISBOMValidator, SbomValidator>()
