@@ -95,4 +95,15 @@ public class SbomToolCmdRunner
             Console.WriteLine("Encountered error while getting the version of the tool.");
         }
     }
+
+    /// <summary>
+    /// Create a digital signature for a given manifest.json file with the provided signing certificate.
+    /// </summary>
+    [ArgActionMethod]
+    [ArgShortcut("sign")]
+    [ArgDescription("Create a digital signature for a given manifest.json file with the provided signing certificate.")]
+    public CreateDigitalSignatureArgs CreateDigitalSignature(CreateDigitalSignatureArgs createDigitalSignatureArgs)
+    {
+        return createDigitalSignatureArgs;
+    }
 }

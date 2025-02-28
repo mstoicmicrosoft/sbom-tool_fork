@@ -50,6 +50,7 @@ internal class Program
                     {
                         ValidationArgs v => services.AddHostedService<ValidationService>(),
                         GenerationArgs g => services.AddHostedService<GenerationService>(),
+                        CreateDigitalSignatureArgs s => services.AddHostedService<DigitalSignatureCreationService>(),
                         RedactArgs r => services.AddHostedService<RedactService>(),
                         FormatValidationArgs f => services.AddHostedService<FormatValidationService>(),
                         _ => services

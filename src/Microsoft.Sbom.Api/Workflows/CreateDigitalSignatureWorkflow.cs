@@ -67,7 +67,6 @@ public class CreateDigitalSignatureWorkflow : IWorkflow<CreateDigitalSignatureWo
                     return false;
                 }
 
-                // TODO: how does this get the stream of the sbom file and the signing cert?
                 var signature = digitalSignatureCreator.CreateDigitalSignature(
                     sbomFileStream,
                     signingCertificate);
